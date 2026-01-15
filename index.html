@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Restaurant Near Me</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="container header__inner">
+      <a class="header__logo" href="#">
+        <img src="assets/img/logo.svg" alt="logo">
+        <span class="header__logo-text">Best Restaurant<br>Near Me</span>
+      </a>
+
+      <div class="header__menu" id="header-menu">
+        <ul class="header__nav">
+          <li>
+            <a class="header__nav-item" href="#countries">Countries</a>
+          </li>
+          <li>
+            <a class="header__nav-item" href="#partners">Partners</a>
+          </li>
+          <li>
+            <a class="header__nav-item" href="#map">Map</a>
+          </li>
+        </ul>
+
+        <button class="button header__close" id="header-menu-close">
+          X
+        </button>
+      </div>
+
+      <button class="button header__burger" id="header-burger">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4 5C3.44775 5 3 5.44771 3 6C3 6.55229 3.44775 7 4 7H20C20.5522 7 21 6.55229 21 6C21 5.44771 20.5522 5 20 5H4ZM4 13C3.44775 13 3 12.5523 3 12C3 11.4477 3.44775 11 4 11H20C20.5522 11 21 11.4477 21 12C21 12.5523 20.5522 13 20 13H4ZM4 19C3.44775 19 3 18.5523 3 18C3 17.4477 3.44775 17 4 17H20C20.5522 17 21 17.4477 21 18C21 18.5523 20.5522 19 20 19H4Z"
+            fill="black" style="fill:black;fill-opacity:1;" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- HERO -->
+    <section class="search">
+      <div class="container search__inner">
+        <div class="search__header">
+          <h1 class="search__title">Best Restaurant Near Me Search</h1>
+          <p class="search__subtitle">
+            Discover the top restaurants around the globe for an unforgettable dining experience
+          </p>
+        </div>
+
+        <form class="search__form">
+          <div class="search__input">
+            <input class="input" type="text" placeholder="City">
+
+            <button class="button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20 12C20 16.4183 16.4183 20 12 20M20 12C20 7.58172 16.4183 4 12 4M20 12H22M12 20C7.58172 20 4 16.4183 4 12M12 20V22M4 12C4 7.58172 7.58172 4 12 4M4 12H2M12 4V2"
+                  stroke="#181A27"
+                  style="stroke:#181A27;stroke:color(display-p3 0.0941 0.1020 0.1529);stroke-opacity:1;"
+                  stroke-width="2" stroke-linecap="round" />
+                <circle cx="12" cy="12" r="4" fill="#181A27"
+                  style="fill:#181A27;fill:color(display-p3 0.0941 0.1020 0.1529);fill-opacity:1;" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="divider"></div>
+
+          <select class="input select search__select">
+            <option class="select__option" value="all">All food</option>
+            <option class="select__option" value="pizza">Pizza</option>
+            <option class="select__option" value="sushi">Sushi</option>
+          </select>
+
+          <button class="button button--primary">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map container" id="map">
+      <div class="map__inner">
+        <div class="map__info">
+          <h2 class="map__info-title">Explore Best Restaurant Near Me on map</h2>
+
+          <button class="button">
+            <svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M26.9297 11.1621C26.9297 11.7598 26.6836 12.3574 26.2793 12.7617L17.3496 21.6562C16.8926 22.0957 16.3652 22.3242 15.8555 22.3242C14.5898 22.3242 13.7285 21.4453 13.7285 20.2852C13.7285 19.6523 14.0098 19.1426 14.4141 18.7559L17.209 15.9434L20.2676 13.1484L17.2617 13.3242H2.23242C0.896484 13.3242 0 12.4453 0 11.1621C0 9.87891 0.896484 9.01758 2.23242 9.01758H17.2617L20.2676 9.19336L17.209 6.39844L14.4141 3.58594C14.0098 3.18164 13.7285 2.68945 13.7285 2.03906C13.7285 0.878906 14.5898 0 15.8555 0C16.3652 0 16.8926 0.228516 17.3496 0.685547L26.2793 9.58008C26.6836 9.98438 26.9297 10.582 26.9297 11.1621Z"
+                fill="black" style="fill:black;fill-opacity:1;" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- AD -->
+    <section class="ad container">
+      <button class="button button--primary add__button">Add</button>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories container">
+      <div class="categories__item">
+        <img class="categories__icon" src="assets/img/categories/asian.png">
+        <p class="categories__title">Asian food</p>
+        <span class="categories__count">8 481</span>
+      </div>
+
+      <div class="categories__item">
+        <img class="categories__icon" src="assets/img/categories/european.png">
+        <p class="categories__title">European food</p>
+        <span class="categories__count">2 481</span>
+      </div>
+
+      <div class="categories__item">
+        <img class="categories__icon" src="assets/img/categories/mediterranean.png">
+        <p class="categories__title">Mediterranean food</p>
+        <span class="categories__count">1 834</span>
+      </div>
+
+      <div class="categories__item">
+        <img class="categories__icon" src="assets/img/categories/latin_american.png">
+        <p class="categories__title">Latin American food</p>
+        <span class="categories__count">1 481</span>
+      </div>
+
+      <div class="categories__item">
+        <img class="categories__icon" src="assets/img/categories/middle_eastern.png">
+        <p class="categories__title">Middle Eastern food</p>
+        <span class="categories__count">781</span>
+      </div>
+    </section>
+
+    <!-- COUNTRIES -->
+    <section class="countries container" id="countries">
+      <h2 class="section-title">Best Restaurant by Country</h2>
+
+      <div class="countries__inner">
+        <ul class="countries__list">
+          <li><img src="https://flagcdn.com/16x12/us.png" alt="us"> United States (34260 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/us.png" alt="us"> United States (34260 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/us.png" alt="us"> United States (34260 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/ca.png" alt="ca"> Canada (2696 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/ca.png" alt="ca"> Canada (2696 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/ca.png" alt="ca"> Canada (2696 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/es.png" alt="es"> Spain (271 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/es.png" alt="es"> Spain (271 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/es.png" alt="es"> Spain (271 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/pl.png" alt="pl"> Poland (214 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/pl.png" alt="pl"> Poland (214 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/pl.png" alt="pl"> Poland (214 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/sv.png" alt="sv"> El Salvador (212 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/sv.png" alt="sv"> El Salvador (212 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/sv.png" alt="sv"> El Salvador (212 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/au.png" alt="au"> Australia (184 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/au.png" alt="au"> Australia (184 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/au.png" alt="au"> Australia (184 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/ch.png" alt="ch"> Switzerland (153 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/ch.png" alt="ch"> Switzerland (153 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/ch.png" alt="ch"> Switzerland (153 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/hk.png" alt="hk"> Hong Kong (152 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/hk.png" alt="hk"> Hong Kong (152 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/hk.png" alt="hk"> Hong Kong (152 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/ro.png" alt="ro"> Romania (150 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/ro.png" alt="ro"> Romania (150 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/ro.png" alt="ro"> Romania (150 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/at.png" alt="at"> Austria (131 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/at.png" alt="at"> Austria (131 locations)</li>
+          <li><img src="https://flagcdn.com/16x12/at.png" alt="at"> Austria (131 locations)</li>
+        </ul>
+
+        <button class="button countries__expand-button">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 9L12 16L19 9" stroke="#8b8c93" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          Expand
+        </button>
+      </div>
+    </section>
+
+    <!-- ADD RESTAURANT -->
+    <section class="add-restaurant container" id="partners">
+      <h2 class="section-title">Add your restaurant</h2>
+
+      <form class="add-restaurant__form">
+        <div class="add-restaurant__form-column">
+          <input class="input add-restaurant__input" type="email" placeholder="E-mail">
+
+          <div class="add-restaurant__address add-restaurant__input">
+            <input class="input" type="text" placeholder="City">
+
+            <button class="button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20 12C20 16.4183 16.4183 20 12 20M20 12C20 7.58172 16.4183 4 12 4M20 12H22M12 20C7.58172 20 4 16.4183 4 12M12 20V22M4 12C4 7.58172 7.58172 4 12 4M4 12H2M12 4V2"
+                  stroke="#181A27"
+                  style="stroke:#181A27;stroke:color(display-p3 0.0941 0.1020 0.1529);stroke-opacity:1;"
+                  stroke-width="2" stroke-linecap="round" />
+                <circle cx="12" cy="12" r="4" fill="#181A27"
+                  style="fill:#181A27;fill:color(display-p3 0.0941 0.1020 0.1529);fill-opacity:1;" />
+              </svg>
+            </button>
+          </div>
+
+          <input class="input add-restaurant__input" type="text" placeholder="Name of Restaurant">
+
+          <textarea class="input add-restaurant__textarea" rows="4" placeholder="About your place"></textarea>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class=" add-restaurant__food">
+          <div class="checkbox">
+            <input class="checkbox__input" type="checkbox" id="asian" value="asian" />
+            <label class="checkbox__label" for="asian">Asian food</label>
+          </div>
+
+          <div class="checkbox">
+            <input class="checkbox__input" type="checkbox" id="european" value="european" checked />
+            <label class="checkbox__label" for="european">European food</label>
+          </div>
+
+          <div class="checkbox">
+            <input class="checkbox__input" type="checkbox" id="mediterranean" value="mediterranean" />
+            <label class="checkbox__label" for="mediterranean">Mediterranean food</label>
+          </div>
+
+          <div class="checkbox">
+            <input class="checkbox__input" type="checkbox" id="latin-american" value="latin-american" />
+            <label class="checkbox__label" for="latin-american">Latin American food</label>
+          </div>
+
+          <div class="checkbox">
+            <input class="checkbox__input" type="checkbox" id="middle-eastern" value="middle-eastern" />
+            <label class="checkbox__label" for="middle-eastern">Middle Eastern food</label>
+          </div>
+        </div>
+      </form>
+
+      <button class="button button--primary">Add</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">
+        <img class="footer__logo-image" src="assets/img/logo.svg" alt="logo">
+        <span class="footer__logo-text">Best Restaurant<br>Near Me</span>
+      </div>
+
+      <span>© 2022</span>
+    </div>
+  </footer>
+
+  <a href="#" class="scrollup" id="scroll-up">
+    <svg class="scroll-up__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M5 9L12 16L19 9" stroke="#fff" style="stroke:#fff;stroke-opacity:1;" stroke-width="2" />
+    </svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
